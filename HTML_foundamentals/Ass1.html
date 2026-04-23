@@ -4,43 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobiloba First Page</title>
+    <link rel="stylesheet" href="Ass1.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#About">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#signin">Contact</a></li>
+                <li class="signup"><a href="#signin">Sign Up</a></li>
             </ul>
         </nav>
     </header>
     <main>
-    <section id="Home">
-    <h1>Hello Universe</h1>
-    <p>Learn HTML with W3Schools!</p>
+    <section id="home">
+    <div class="home">
+        <h1>Hi, I'm Tobiloba!</h1>
+    <p>I am a passionate web developer learning HTML and CSS. I enjoy creating beautiful and functional websites.</p>
     <a href="https://www.w3schools.com/html/">HTML Tutorial</a>
-    <img src="/HTML_foundamentals/Images/html.jfif" alt="Image description">
+    </div>
+    <div class="home-img">
+      <img src="/HTML_foundamentals/Images/tobiloba.jpg" alt="Image description">  
+    </div>
     </section>
 
-    <section id="#Contact">
+    <section id="about">
+        <div class="about">
+            <h2>About Me</h2>
+        <p>My name is Tobiloba, and I am learning HTML & CSS to create amazing web pages. This is a simple webpage created using HTML and CSS. 
+                It serves as an introduction to web development and showcases basic HTML elements and styling.
+            I enjoy coding and look forward to building my own website in the future.</p>
+            </div>
+            <div class="about-img">  
+            <img src="/HTML_foundamentals/Images/tobiloba.jpg" alt="Image description">
+            </div>
+    </section>
+
+    <section id="signin">
     <form action="">
+        <h2>Contact Me</h2>
+        <div class="signin">
+        <div class="signin1">
         <label for="fname">First Name:</label><br>
         <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
         <label for="lname">Last Name:</label><br>
         <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <label>Gender: </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label> <br><br>
+        <label for="comment">Comment:</label><br><br>
+        <textarea id="comment" rows="7" cols="35"></textarea><br>
+        </div>
+        
+        <div class="signin2">
+            <label for="state">State of Residence:</label><br>
+            <select location="state" name="state" id="state" value="state">
+                <option value="select">Select State</option>
+                <option value="lagos">Lagos</option>
+                <option value="abuja">Abuja</option>
+                <option value="portharcourt">Port Harcourt</option>
+                <option value="kano">Kano</option>
+                <option value="ibadan">Ibadan</option>
+                <option value="enugu">Enugu</option>
+            </select><br><br>
+            <label for="how">How did you hear about us?</label><br><br>
+            <input type="checkbox" id="socialmedia" name="how" value="socialmedia">
+            <label for="socialmedia">Social Media</label><br><br>   
+            <input type="checkbox" id="friend" name="how" value="friend">
+            <label for="friend">Friend</label><br><br>
+            <input type="checkbox" id="advertisement" name="how" value="advertisement">
+            <label for="advertisement">Advertisement</label><br><br>
+            <input type="checkbox" id="other" name="how" value="other">
+            <label for="other">Other</label><br><br>
+        </div>
+        </div>
         <input type="submit" value="Submit">
     </form>
     </section>
 
-    <section id="About">
-        <h2>About Me</h2>
-        <p>My name is Tobiloba, and I am learning HTML to create amazing web pages. 
-            I enjoy coding and look forward to building my own website in the future.</p>
-    </section>
+    
     </main>
     <footer>
         <p>&copy; 2026 My Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
+<!--<link rel="stylesheet" href="style.css">
+
+CSS:
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+Exercise:
+- Change colors, fonts, and alignment-->
