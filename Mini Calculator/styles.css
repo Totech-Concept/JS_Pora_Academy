@@ -1,0 +1,54 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+main {
+    width: 20vw;
+    height: 70vh;
+    padding: 20px;
+    border: 1px solid;
+    margin: auto;
+    border-radius: 6px;
+}
+
+input.values {
+    width: 90%;
+    height: 6rem;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: none;
+    margin: 5px;
+    min-height: 60px;
+}
+
+div:not([class]), .plus-sign {
+    border: 1px solid;
+    border-radius: 50%;
+    margin: auto;
+    padding: 10px;
+    width: 40px;
+    min-height: 30px;
+    background-color: blue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.plus-sign {
+   background-color: rgb(74, 74, 168); 
+   grid-row: span 2;
+  /* align-self: stretch;*/
+   height: 100%;
+   border-radius: 30px;
+}
