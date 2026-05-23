@@ -13,7 +13,8 @@ main {
     padding: 20px;
     border: 1px solid;
     margin: auto;
-    border-radius: 6px;
+    border-radius: 8px;
+    background-color: beige;
 }
 
 input.values {
@@ -21,34 +22,42 @@ input.values {
     height: 6rem;
     margin: 10px;
     border-radius: 8px;
+    font-size: 25px;
 }
+
 
 .rows {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     border: none;
     margin: 5px;
     min-height: 60px;
 }
 
-div:not([class]), .plus-sign {
+.key {
     border: 1px solid;
     border-radius: 50%;
     margin: auto;
     padding: 10px;
     width: 40px;
     min-height: 30px;
-    background-color: blue;
+    background-color: lightgrey;
     align-items: center;
     display: flex;
     justify-content: center;
-    color: aliceblue;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: gray;
 }
 
 .plus-sign {
-   background-color: rgb(74, 74, 168); 
+   background-color: grey; 
    grid-row: span 2;
-  /* align-self: stretch;*/
-   height: 100%;
+   height: 80%;
    border-radius: 30px;
 }
