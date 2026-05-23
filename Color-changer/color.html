@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+  <div>
+    <h1>Color Changer</h1>
+    <img id="image" src="/Color-changer/Assets/orange-ball.png" alt="ball" width="400" height="400">
+    <p>Click the button below to change the ball color</p>
+    <button id="changeBtn">Change color</button>
+    </div>
+    <script>
+        const image = document.getElementById("image"); 
+        const button = document.getElementById("changeBtn"); 
+
+        const colors = [
+          "/Color-changer/Assets/green-ball.png",
+          "/Color-changer/Assets/red-ball2.png",
+          "/Color-changer/Assets/blue-ball.png",
+          "/Color-changer/Assets/yellow-ball.png",
+          "/Color-changer/Assets/cyan-ball.png",
+          "/Color-changer/Assets/red-ball3.png",
+          "/Color-changer/Assets/orange-ball.png"
+        ];
+
+
+      let index = 0;
+
+      button.onclick = function() {
+
+          index++;
+
+        if (index >= colors.length) {
+            index = 0;
+        }
+
+        image.src = colors[index]
+      }
+    </script>
+</body>
+</html>

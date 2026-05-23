@@ -1,0 +1,40 @@
+div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 35vw;
+    height: 90vh;
+    margin: auto;
+}
+h1 {
+    font-size: 3rem;
+    /* font-weight: bold; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: changer 5s linear 2s infinite alternate;
+}
+
+@keyframes changer {
+  0% {color: blue;}  
+  25% {color: red;}  
+  50% {color: green;}  
+  60% {color: brown;}  
+  75% {color: palevioletred;}  
+  100% {color: purple;}  
+}
+p {
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;  
+}
+button {
+    padding: 9px 11px;
+    background-color: gold;
+    color: #000;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: goldenrod;
+}
