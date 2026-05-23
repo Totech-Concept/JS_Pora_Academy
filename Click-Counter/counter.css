@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50vw;
+    height: 80vh;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8rem;
+    margin: 0 auto;
+    align-items: center;
+}
+div {
+    margin: 10px auto;
+}
+button {
+    background-color: green;
+    color: yellowgreen;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+button:hover {
+    background-color: rgb(0 225 0);
+    color: green;
+}
