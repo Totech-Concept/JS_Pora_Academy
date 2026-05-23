@@ -1,22 +1,32 @@
-function sum(num1, num2) {
-    sum = num1 + num2
-    return sum; 
-}
+const inputBox = document.getElementById("inputBox");
+const keys = document.querySelectorAll(".key");
 
-function sum(num1, num2) {
-    subtract = num1 - num2
-    return subtract; 
-}
+keys.forEach(function(key){
+    key.onclick = function() {
+        const value = key.textContent;
 
-function multiply(num1, num2) {
-    multiply = num1 * num2
-    return multiply; 
-}
+        // if(value === "➕") value = "+";
+        // if(value === "➖") value = "-";
+        // if(value === "✖️") value = "*";
+        // if(value === "➗") value = "/";
 
-function divide(num1, num2) {
-    divide = num1 / num2;
-    if(num2 === 0) {
-        return "Error: cannot divide by zero" 
-    }
-    return divide; 
-}
+        
+
+        if(value === "="){
+            inputBox.value = eval(inputBox.value);
+        } else if (value === "C/CE") {
+            inputBox.value = "";
+        } else if(
+            value === "OFF" ||
+            value === "MRC" ||
+            value === "M-" ||
+            value === "M+" ||
+            value === "|"
+        ){
+            return;
+        }
+        else{
+            inputBox.value += value;
+        }
+    };
+});
