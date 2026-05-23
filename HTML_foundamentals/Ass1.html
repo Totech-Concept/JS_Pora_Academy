@@ -13,7 +13,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#signin">Contact</a></li>
-                <li class="signup"><a href="#signin">Sign Up</a></li>
+                <li class="signup"><a href="#signIn">Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -41,29 +41,31 @@
             </div>
     </section>
 
-    <section id="signin">
-    <form action="">
+    <section id="signing">
+    <form action="" id="signIn">
         <h2>Contact Me</h2>
-        <div class="signin">
+        <div class="signinee">
         <div class="signin1">
         <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
         <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
         <label>Gender: </label>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label> <br><br>
         <label for="comment">Comment:</label><br><br>
-        <textarea id="comment" rows="7" cols="35"></textarea><br>
+        <textarea id="comment" rows="7" cols="35" required></textarea><br>
         </div>
         
         <div class="signin2">
             <label for="state">State of Residence:</label><br>
-            <select location="state" name="state" id="state" value="state">
+            <select name="state" id="state" value="state">
                 <option value="select">Select State</option>
                 <option value="lagos">Lagos</option>
                 <option value="abuja">Abuja</option>
@@ -85,6 +87,9 @@
         </div>
         <input type="submit" value="Submit">
     </form>
+
+    <p id="form-data"></p> 
+    <div id="form-results"></div> 
     </section>
 
     
@@ -92,6 +97,7 @@
     <footer>
         <p>&copy; 2026 My Website. All rights reserved.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
 
@@ -112,4 +118,80 @@ p {
 }
 
 Exercise:
-- Change colors, fonts, and alignment-->
+- Change colors, fonts, and alignment
+
+
+Objective:
+Learn layout techniques and responsive design basics.
+
+Topics:
+- Box model (margin, padding, border)
+- Flexbox basics
+- Introduction to Grid
+- Responsive design (media queries)
+
+Live Coding:
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+Exercise:
+- Create a simple layout with 3 boxes
+- Make it responsive using media queries
+
+Assignment
+
+Upgrade your personal profile page:
+- Apply CSS styling
+- Use Flexbox for layout
+- Make it responsive
+
+Submission:
+Push updated project to GitHub
+
+
+
+Class 2: Layout & Responsiveness
+
+Objective:
+Learn layout techniques and responsive design basics.
+
+Topics:
+- Box model (margin, padding, border)
+- Flexbox basics
+- Introduction to Grid
+- Responsive design (media queries)
+
+Live Coding:
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+Exercise:
+- Create a simple layout with 3 boxes
+- Make it responsive using media queries
+
+Assignment
+
+Upgrade your personal profile page:
+- Apply CSS styling
+- Use Flexbox for layout
+- Make it responsive
+
+Submission:
+Push updated project to GitHub
+-->

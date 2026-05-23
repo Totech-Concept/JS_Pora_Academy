@@ -116,17 +116,18 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
-#signin {
+#signing {
     padding: 1.2rem;
     background-color: rgb(218, 200, 234);
     color: blueviolet;
     width: 40%;
+    /* min-height: 80%; */
     margin: 1.2rem auto;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     
 }
-.signin {
+.signinee {
     display: grid;
     gap: 0.8rem;
     grid-template-columns: repeat(2, 1fr);
